@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    background-image: url(http://i1.faceprep.in/prograd-junior/animax-bg.png );
+    background-size: 100% 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border: 8px solid#1b1717;
+}
+#logo img{
+    width: 5vh;
+}
+#scroll{
+    width: 80px;
+}
+#header-text{
+    max-width: 500px;
+    min-height: 300px;
+    padding: 10% 0%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+h1{
+    font-size: 55px;
+    font-weight: lighter;
+}
+p{
+    font-family: "Work Sans", sans-serif;
+    font-size: 22px;
+}
+nav{
+    margin: 2% 7%;
+}
+#header-text > p {
+    width: 300px;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.movies{
+    flex-wrap: wrap;
+    min-height: 300px;
+    margin: 3% 14%;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.movie-image{
+    width: 700px;
+    height: 240px;
+}
+.movie-image > img{
+    width: 100%;
+}
+.movie-text > p{
+    width: 400px;
+}
+footer{
+    height: 90px;
+    text-align: center;
+}
+.button{
+    background-color:  #F50A5F;
+    padding: 7px;
+}
+a{
+    text-decoration: none;
+    color:antiquewhite;
+}
+#play{
+    display: inline;
+}
+#scroll{
+    position: relative;
+    animation: mymove 3s infinite;
+    animation-play-state: running;
+}
+@keyframes mymove{
+    from{
+        top: 15px;
+}
+to{
+    top: 100px;
+}
+}
+hr{
+    color: #1B1717;
+    border: 4px solid #1B1717;
+}
+@media only screen and(max-width:600px){
+    .wrap-reverse{
+        flex-wrap: wrap-reverse;
+    }
+.container{
+    text-align: center;
+}
+.button{
+   margin: 0% 2%; 
+    }
+}
